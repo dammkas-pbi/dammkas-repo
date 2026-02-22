@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Power BI Developer & Controller</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-main: #333333;
+            --text-light: #666666;
+            --primary-color: #002b5e; /* Corporate Navy */
+            --accent-color: #0078d4; /* Microsoft Blue */
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #d1e8ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .about-section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .about-section h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .report-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .report-info {
+            padding: 25px;
+        }
+
+        .report-info h4 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+
+        .report-tags {
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background-color: #e1f0fe;
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
+            display: inline-block;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 600px; /* Wysokość raportu */
+            background-color: #eeeeee;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #d1e8ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Damian Kasperski</h1> 
+        <h2>Data Analyst | Power BI Developer & Controller | Bridging Data and Business</h2>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h3>About Me</h3>
+            <p>Power BI Developer and Data Analyst bridging the gap between raw data and business decisions. With a strong foundation in corporate controlling and management reporting, I specialize in transforming complex, multi-source data into intuitive, scalable BI architectures that drive corporate strategy.</p>
+            <p>My goal is to not just gather requirements, but to actively partner with finance and operations to design solutions that accurately reflect business realities. My technical expertise spans advanced Power BI development, data modeling, and process automation.</p>
+        </section>
+
+        <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-bottom: 20px;">Featured Reports</h3>
+        
+        <div class="portfolio-grid">
+            
+            <div class="report-card">
+                <div class="report-info">
+                    <h4>IT Service Ticket Overview</h4>
+                    <div class="report-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Operations</span>
+                        <span class="tag">KPI Tracking</span>
+                    </div>
+                    <p><strong>Business Case:</strong> Dashboard designed to track and analyze IT service ticket resolutions, identifying bottlenecks in the support process and measuring team performance against SLA targets.</p>
+                </div>
+                <div class="iframe-container">
+                    <iframe title="It Service Ticket Overview - Old version" src="https://app.powerbi.com/view?r=eyJrIjoiNmE3ZjI5ZTAtNzY5MC00OTkwLTkzYmUtYWZiNjRhMGNlMTZlIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+
+            </div>
+    </div>
+
+    <footer>
+        <p>Want to build data solutions together?</p>
+        <p><a href="www.linkedin.com/in/damian-kasperski-2b4ba0177" target="_blank">Connect with me on LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
