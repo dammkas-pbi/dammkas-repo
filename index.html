@@ -3,252 +3,337 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a1020">
-  <meta name="description" content="Explore Damian Kasperski’s interactive Power BI portfolio, with projects in financial controlling, sales analytics, and IT operations.">
+  <meta name="theme-color" content="#edede9">
+  <meta name="description" content="Explore Damian Kasperski’s Power BI portfolio, from financial controlling to sales and operations analytics.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Damian Kasperski | Power BI Portfolio">
-  <meta property="og:description" content="Interactive Power BI reports in financial controlling, sales analytics, and IT operations.">
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7ZetUsNQEEZ5BYaHAINi8CCZSrBUggMUOKrAUVdFXQUPwAPg8Xg0Hl3mE525nLskaX7ulNkVR/TbzW1zepNNthaL5dIzWwy8EQIYeCMEMPBGCGDgjRDAwBshgIE3QgADb4QABt4IAQy8EQIYeCMEMPBGCGDQhofHj0rm8+/sGAsex7qYTj8b9TWlFwHbO/uNOD17qvzB7GddJ8+ei8uXrG8digpYIRHWrmAf60fHN7/qB4fjrGddBhGgH7qCtbSnbp20dnX9mtVns69sjXUZRADr2vb6t9ink2qyjk6Utdu7t+x72lBEgNCWp4TdvVGjdbiTTkaTbP22FBMgtBPYqxtb1Tr6p9NM0qz7R1uKChA6gbQ3vQy4jk6UWdUUaUNxAdzO6RjjOpoWf/X2xUYLIH3c9clGC2CvNTq7UlwAJ0HVPcB68uPo7EpRAdY8r5sC2iHM02O6UlSA5nfa1/Q5gLtGn/sahcUEWP8kn+ZYX+XWpXA+fs6+ow2DCEhfVXXNcvYLjbi6ddKaJbCPZ4JBBNRhnby1TlrTlrdEdr0Uiguououzl3XrUbrre0EvAtLXXwtt3/vJe3Yc4XGsC63Fvi5ToRcB/5kQwMAbIYCBN0IAA2+EAAbeCAEMvBECGHgjBDDwRghg4I0QwMAbIYCBN9wL+AHRHc33GX/BpgAAAABJRU5ErkJggg==">
-  <title>Damian Kasperski | Power BI Portfolio</title>
+  <meta property="og:title" content="Damian Kasperski | BI &amp; Analytics">
+  <meta property="og:description" content="Interactive Power BI work in financial controlling, sales analytics, and operations.">
+  <title>Damian Kasperski | BI &amp; Analytics</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIESURBVHhe7ZetTgNREEZ5CAQJBofDkJAQBAJTgQCBqEBUkKBJ8IQX6AOAJsGS4FAYDAZHggWLR0E+0eRy7rC73Z+bkhlxRL+Zve2e3t3ZXfr4Ovn2zBIDb4QABt4IAQy8EQIYeCMEMPBGCGDgjRDAwBshgIE3QgADb4QABt4IAQy8EQIYtOHh+aiSt89JdowFj2NdPL2OG/U1pRcBK6vLjTi/2K78wexnXSfPnun1XtY3D0UFzJAIa1ewj/XxZONXfXSwnvXMyyAC9ENnsJb21K2T1q5uR1n95f04W2NeBhHAura9/i326aSarKMTZe3mfj/7njYUESC05Slha2et0TrcSadnm9n6bSkmQGgnsFc3tqp19E+nmaRZ94+2FBUgdAJpb3oZcB2dKLOqKdKG4gK4ndMxxnU0Lf7q7YuFFkD6uOuThRbAXmt0dqW4AE6CqnuA9eTH0dmVogKseV43BbRDmKfHdKWoAM3vtK/pcwB3jT73NQqLCbD+ST7NsT7LrUvhcrqbfUcbBhGQvqrqmuXsFxpxdeukNUtgH88Egwiowzp5a520pi1viex6KRQXUHUXZy/r1qN01/eCXgSkr78W2r53j4fZcYTHsS60Fvu6TIVeBPxnQgADb4QABt4IAQy8EQIYeCMEMPBGCGDgjRDAwBshgIE3QgADb4QABt5wL+AHRQejzhopJ4cAAAAASUVORK5CYII=">
   <style>
     :root {
-      color-scheme: dark;
-      --background: #0a1020;
-      --surface: #121b31;
-      --text: #f5f2ec;
-      --muted: #bdc6dc;
-      --border: #3a486b;
-      --accent: #a3a3ff;
-      --accent-hover: #bdbdff;
-      --on-accent: #11132d;
-      --title-accent: #c8a3ff;
-      --cyan: #61ecde;
-      --gutter: clamp(1rem, 4vw, 4rem);
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-      line-height: 1.55;
+      color-scheme: light;
+      --page: #edede9;
+      --paper: #fbfaf6;
+      --ink: #181b14;
+      --muted: #4d5047;
+      --stroke: #d9d9d0;
+      --lime: #e5f965;
+      --lime-hover: #d8ed51;
+      --sage: #dadfd3;
+      --card: #f3f2ed;
+      --focus: #3b5707;
+      --radius: 1.35rem;
+      --pad: clamp(.75rem, 2.6vw, 2.35rem);
+      font-family: "Aptos", "Segoe UI", system-ui, sans-serif;
+      line-height: 1.5;
       scroll-behavior: smooth;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
     [hidden] { display: none !important; }
-    body {
-      margin: 0;
-      color: var(--text);
-      background:
-        radial-gradient(ellipse 40rem 29rem at 43% 9rem, #23246b 0%, transparent 100%),
-        radial-gradient(ellipse 50rem 36rem at 90% 44rem, #181c4e 0%, transparent 100%),
-        var(--background);
-    }
+    body { margin: 0; color: var(--ink); background: var(--page); }
     h1, h2, h3, p { margin: 0; }
     a { color: inherit; }
+    img { display: block; max-inline-size: 100%; }
     button { font: inherit; }
-    :focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
-    ::selection { background: var(--title-accent); color: var(--on-accent); }
-    .wrap { inline-size: min(100% - 2 * var(--gutter), 80rem); margin-inline: auto; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+    ::selection { background: var(--lime); color: var(--ink); }
     .skip-link {
       position: fixed;
-      inset: .75rem auto auto .75rem;
+      inset: 1rem auto auto 1rem;
       z-index: 2;
-      padding: .65rem 1rem;
-      border-radius: .5rem;
-      color: var(--on-accent);
-      background: var(--accent);
-      transform: translateY(-200%);
+      transform: translateY(-250%);
+      background: var(--lime);
+      padding: .7rem 1rem;
+      border-radius: 100vw;
     }
     .skip-link:focus { transform: none; }
-    .header-inner, .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: .75rem 1.5rem;
+    .site {
+      inline-size: min(85rem, calc(100% - 2 * clamp(.5rem, 2vw, 1.75rem)));
+      margin: clamp(.5rem, 2vw, 1.75rem) auto;
+      padding-inline: var(--pad);
+      border: 1px solid #e1e0da;
+      border-radius: clamp(1rem, 2vw, 1.85rem);
+      background: var(--paper);
     }
-    .header-inner { min-block-size: 4.25rem; border-block-end: 1px solid var(--border); }
-    .brand, .navigation { display: flex; align-items: center; }
-    .brand { gap: .75rem; text-decoration: none; font-size: 1.125rem; font-weight: 700; }
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      flex: none;
-      inline-size: 2.5rem;
-      aspect-ratio: 1;
-      border-radius: .55rem;
-      background: var(--accent);
-      color: var(--on-accent);
-      font-size: 1rem;
-      letter-spacing: -.07em;
-    }
-    .navigation { gap: clamp(.5rem, 2.5vw, 2.25rem); flex-wrap: wrap; }
-    .nav-link {
-      display: inline-flex;
-      align-items: center;
-      min-block-size: 2.75rem;
-      padding-inline: .25rem;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .nav-link:hover, .footer-link:hover { color: var(--accent-hover); }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: .5rem;
-      min-block-size: 2.75rem;
-      padding: .55rem 1rem;
-      border: 1px solid transparent;
-      border-radius: .55rem;
-      background: var(--accent);
-      color: var(--on-accent);
-      font-size: .95rem;
-      font-weight: 700;
-      line-height: 1.4;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background-color 160ms, border-color 160ms, color 160ms;
-    }
-    .button:hover { background: var(--accent-hover); }
-    .button-outline { background: transparent; border-color: #727fa4; color: var(--text); }
-    .button-outline:hover { background: #232b48; border-color: var(--accent); }
-    .external-arrow { font-size: 1rem; line-height: 1; }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr);
-      align-items: center;
-      gap: clamp(1.75rem, 4.5vw, 4.75rem);
-      padding-block: clamp(2.5rem, 4vw, 4.25rem);
-      border-block-end: 1px solid var(--border);
-    }
-    .hero h1 {
-      font-size: clamp(3.25rem, 7.1vw, 6.6rem);
-      font-weight: 780;
-      line-height: .91;
-      letter-spacing: -.074em;
-    }
-    .hero h1 span { display: block; color: var(--title-accent); }
-    .hero-role {
-      margin-block-start: 1.15rem;
-      font-size: clamp(1.2rem, 2.15vw, 1.8rem);
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -.035em;
-    }
-    .hero-description { max-inline-size: 46ch; margin-block-start: .65rem; color: var(--muted); font-size: 1.075rem; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-block-start: 1.2rem; }
-    .hero-actions .button { padding-inline: 1.25rem; }
-
-    /* Decorative illustrations use CSS so the catalogue can render without image requests. */
-    .art {
-      --chart-color: #b893ff;
-      --line-color: var(--cyan);
-      position: relative;
-      isolation: isolate;
-      min-inline-size: 0;
-      overflow: hidden;
-      background: radial-gradient(ellipse at 72% 72%, #23234f, #10182d 68%);
-    }
-    .hero-art {
-      aspect-ratio: 1.9;
-      border: 1px solid #6973a0;
-      border-radius: 1.05rem;
-      box-shadow: 0 1.5rem 4.5rem #070c1d52;
-    }
-    .plot {
-      position: absolute;
-      inset: 8% 4% 8%;
-      border-block-end: 1px solid #5f709985;
-      background-image: linear-gradient(90deg, #7189bc3d 1px, transparent 1px), linear-gradient(#7189bc3d 1px, transparent 1px);
-      background-size: 14% 100%, 100% 15%;
-    }
-    .bars { position: absolute; inset: 0; display: flex; align-items: end; gap: 2.1%; }
-    .bars span {
-      flex: 1;
-      block-size: var(--level);
-      min-inline-size: 0;
-      border-radius: .16rem .16rem 0 0;
-      background: linear-gradient(var(--chart-color), #5962a7);
-      opacity: .76;
-    }
-    .spark {
-      position: absolute;
-      inset: 0;
-      background: var(--line-color);
-      clip-path: polygon(0 89%, 12% 80%, 21% 73%, 31% 68%, 39% 59%, 48% 56%, 55% 47%, 63% 39%, 71% 37%, 78% 27%, 86% 22%, 93% 11%, 100% 4%, 100% 5.55%, 93% 12.55%, 86% 23.55%, 78% 28.55%, 71% 38.55%, 63% 40.55%, 55% 48.55%, 48% 57.55%, 39% 60.55%, 31% 69.55%, 21% 74.55%, 12% 81.55%, 0 90.55%);
-    }
-
-    .reports { padding-block: clamp(2rem, 3.4vw, 3.5rem) clamp(3rem, 7vw, 6.5rem); }
-    .section-heading {
-      font-size: clamp(2.125rem, 4vw, 3.25rem);
-      font-weight: 760;
-      line-height: 1.05;
-      letter-spacing: -.055em;
-    }
-    .section-description { margin-block-start: .55rem; color: var(--muted); font-size: 1.075rem; }
-    .report-toolbar {
+    .site-header, .site-footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: .65rem 1rem;
-      margin-block: 1.2rem 1.4rem;
+      gap: .55rem 1rem;
     }
-    .filters { display: flex; flex-wrap: wrap; gap: .5rem; }
-    .filter { min-inline-size: 4.75rem; }
-    .filter[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--on-accent); }
-    .filter-status { color: var(--muted); font-size: .875rem; }
-    .report-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-    .report-card {
+    .site-header { min-block-size: 4.75rem; padding-block: .6rem; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      min-block-size: 2.75rem;
+      font-weight: 750;
+      text-decoration: none;
+      letter-spacing: -.015em;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      flex: none;
+      inline-size: 2.35rem;
+      aspect-ratio: 1;
+      border-radius: .7rem;
+      background: var(--ink);
+      color: var(--paper);
+      font-size: .85rem;
+      letter-spacing: -.065em;
+    }
+    .navigation { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .6rem;
+      min-block-size: 2.75rem;
+      padding: .48rem .95rem;
+      border: 1px solid transparent;
+      border-radius: 100vw;
+      background: var(--card);
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 690;
+      line-height: 1.18;
+      text-decoration: none;
+      transition: background-color 160ms, border-color 160ms;
+    }
+    button.pill { cursor: pointer; }
+    .pill:hover { background: #e8e8df; }
+    .pill-outlined { border-color: var(--stroke); background: transparent; }
+    .arrow { font-size: 1.05em; line-height: 1; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.07fr);
+      gap: .85rem;
+    }
+    .hero-copy, .hero-feature {
+      min-inline-size: 0;
+      min-block-size: clamp(23rem, 37vw, 33rem);
+      border-radius: var(--radius);
+    }
+    .hero-copy {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      background: var(--lime);
+      padding: clamp(1.65rem, 4.5vw, 4.65rem);
+    }
+    .hero h1, .section-heading, .report-title { font-family: system-ui, sans-serif; }
+    .hero h1 {
+      font-size: clamp(2.8rem, 6.65vw, 6.5rem);
+      font-weight: 790;
+      line-height: .93;
+      letter-spacing: -.082em;
+    }
+    .hero h1 span { display: block; }
+    .hero-role {
+      margin-block-start: 1.1rem;
+      font-size: clamp(1.05rem, 2vw, 1.55rem);
+      font-weight: 740;
+      letter-spacing: -.025em;
+    }
+    .hero-description {
+      max-inline-size: 32ch;
+      margin-block-start: .4rem;
+      font-size: clamp(.99rem, 1.45vw, 1.16rem);
+      line-height: 1.45;
+    }
+    .hero-cta { margin-block-start: 1.45rem; padding-inline: 1.1rem; background: var(--paper); }
+    .hero-cta:hover { background: white; border-color: var(--ink); }
+    .hero-feature {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(.9rem, 2vw, 1.5rem);
+      padding: clamp(1.4rem, 3vw, 3rem);
+      background: var(--sage);
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .hero-mount {
+      display: block;
+      padding: clamp(.35rem, .8vw, .65rem);
+      border: 1px solid #ffffffb3;
+      border-radius: .85rem;
+      background: var(--paper);
+      box-shadow: 0 .85rem 2.25rem #33402b20;
+      transition: box-shadow 160ms;
+    }
+    .hero-feature:hover .hero-mount { box-shadow: 0 .95rem 2.75rem #33402b35; }
+    .report-image {
+      inline-size: 100%;
+      block-size: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      border-radius: .43rem;
+      background: #fff;
+    }
+    .featured-caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: .55rem;
+      font-size: clamp(1rem, 1.7vw, 1.35rem);
+      font-weight: 735;
+      line-height: 1.22;
+      letter-spacing: -.02em;
+    }
+    .arrow-circle {
+      display: grid;
+      place-items: center;
+      flex: none;
+      inline-size: 2.75rem;
+      aspect-ratio: 1;
+      border: 1px solid #ffffff91;
+      border-radius: 50%;
+      background: var(--paper);
+      font-size: 1.35rem;
+      font-weight: 500;
+      transition: background-color 160ms;
+    }
+    .hero-feature:hover .arrow-circle { background: var(--lime); }
+
+    .reports, .about {
+      margin-inline: clamp(0rem, 2vw, 1.35rem);
+      padding-block: clamp(3rem, 6.5vw, 6.2rem);
+      scroll-margin-block-start: 1rem;
+    }
+    .section-heading {
+      font-size: clamp(2.15rem, 4.9vw, 4.45rem);
+      font-weight: 770;
+      line-height: .99;
+      letter-spacing: -.073em;
+    }
+    .section-description {
+      margin-block-start: .65rem;
+      color: var(--muted);
+      font-size: clamp(.95rem, 1.4vw, 1.1rem);
+    }
+    .report-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .5rem 1.25rem;
+      margin-block: 1rem 1.25rem;
+    }
+    .filters { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .filter { border-color: var(--stroke); background: var(--paper); }
+    .filter[aria-pressed="true"] { background: var(--lime); border-color: #c2d642; }
+    .filter[aria-pressed="true"]:hover { background: var(--lime-hover); }
+    .filter-status { color: var(--muted); font-size: .85rem; }
+    .report-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .85rem;
+      margin-block-start: 1.25rem;
+    }
+    .report-card {
       min-inline-size: 0;
-      border: 1px solid #556486;
-      border-radius: 1rem;
-      background: var(--surface);
+      overflow-wrap: anywhere;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid #e4e3dc;
+    }
+    .report-link {
+      display: flex;
+      flex-direction: column;
+      min-block-size: 100%;
+      padding: clamp(.65rem, 1.5vw, 1.05rem);
+      border-radius: var(--radius);
+      text-decoration: none;
+    }
+    .report-link:focus-visible { outline-offset: 2px; }
+    .report-mount {
+      display: block;
+      padding: .3rem;
+      border: 1px solid #dedfd5;
+      border-radius: .88rem;
+      background: #fff;
       transition: border-color 160ms;
     }
-    .report-card:focus-within, .report-card:hover { border-color: var(--accent); }
-    .report-art { block-size: clamp(7.75rem, 14vw, 11.75rem); border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0; }
-    .report-art .plot { inset: 12% 6% 10%; }
-    .report-art .bars { gap: 3%; }
-    .art-executive { --chart-color: #64f1df; --line-color: #d5abff; }
-    .art-sales { --chart-color: #83c3ff; --line-color: #70f1d4; }
-    .art-executive .bars span { background: linear-gradient(#63f2e2, #21a995); }
-    .art-sales .bars span { background: linear-gradient(#9cbbff, #4076bd); }
-    .variance { position: absolute; inset: 4% 0; display: grid; gap: 9%; }
-    .variance::after {
-      position: absolute;
-      inset: -3% auto -3% 50%;
-      inline-size: 2px;
-      background: #d7d7f3;
-      content: "";
+    .report-link:hover .report-mount { border-color: #a7ab98; }
+    .report-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: start;
+      padding: clamp(.6rem, 1.15vw, .95rem) .25rem .2rem;
     }
-    .variance span { margin-inline-start: 50%; inline-size: var(--level); border-radius: 0 .1rem .1rem 0; background: #bd96f8; }
-    .variance span.negative { margin-inline-start: calc(50% - var(--level)); border-radius: .1rem 0 0 .1rem; background: #a680e6; }
-    .art-variance { background: radial-gradient(ellipse at 45% 50%, #1c2b4b, #10182d 74%); }
-    .art-variance .variance span { background: #6ad6e1; }
-    .art-variance .variance span.negative { background: #bf9df1; }
-    .matrix { position: absolute; inset: 0; display: grid; grid-template-rows: repeat(4, 1fr); gap: 8%; }
-    .matrix span {
-      border-radius: .2rem;
-      background: linear-gradient(90deg, var(--chart-color) var(--level), #61759c48 var(--level));
-      opacity: .7;
+    .report-title {
+      font-size: clamp(1.35rem, 2.35vw, 2.05rem);
+      font-weight: 760;
+      line-height: 1.1;
+      letter-spacing: -.052em;
     }
-    .art-receivables { --chart-color: #79d6c8; }
-    .art-scorecard { --chart-color: #8caff9; }
-    .art-tickets { --chart-color: #d29fe9; --line-color: #79dcff; }
-    .report-body { display: flex; flex: 1; flex-direction: column; align-items: start; padding: clamp(1rem, 2vw, 1.5rem); }
-    .report-title { font-size: clamp(1.2rem, 2.1vw, 1.75rem); line-height: 1.18; letter-spacing: -.034em; }
-    .report-description { margin-block: .5rem .8rem; color: var(--muted); }
-    .tags { display: flex; flex-wrap: wrap; gap: .25rem .8rem; margin: 0 0 1rem; padding: 0; list-style: none; }
-    .tags li { color: #d1c1f8; font-size: .8rem; font-weight: 600; }
-    .report-open { margin-block-start: auto; }
+    .report-description { margin-block: .5rem .75rem; color: var(--muted); font-size: .98rem; line-height: 1.4; }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .32rem;
+      margin: 0 0 .8rem;
+      padding: 0;
+      list-style: none;
+    }
+    .tags li {
+      padding: .24rem .52rem;
+      border: 1px solid #d7d8ce;
+      border-radius: 100vw;
+      color: #464b3d;
+      font-size: .76rem;
+      font-weight: 620;
+      line-height: 1.17;
+    }
+    .report-cta { margin-block-start: auto; border-color: var(--stroke); background: var(--paper); }
+    .report-link:hover .report-cta, .report-link:focus-visible .report-cta {
+      border-color: #c2d642;
+      background: var(--lime);
+    }
 
-    .about { border-block: 1px solid var(--border); background: #12182c; }
-    .about-inner { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 1.25rem 3rem; padding-block: clamp(2.5rem, 6vw, 5.5rem); }
-    .about-text p { max-inline-size: 62ch; color: var(--muted); font-size: 1.075rem; }
-    .about-text p + p { margin-block-start: .9rem; }
-    .about-text .button { margin-block-start: 1.25rem; }
-    .footer-inner { flex-wrap: wrap; min-block-size: 5rem; padding-block: .8rem; color: var(--muted); font-size: .9rem; }
-    .footer-link { display: inline-flex; align-items: center; gap: .4rem; min-block-size: 2.75rem; text-decoration: none; }
+    .about { border-block-start: 1px solid var(--stroke); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+      align-items: start;
+      gap: clamp(1.5rem, 5vw, 5rem);
+    }
+    .about-identity { display: flex; align-items: center; gap: clamp(1rem, 2.4vw, 1.8rem); margin-block-end: 1.1rem; }
+    .portrait {
+      flex: none;
+      inline-size: clamp(6.5rem, 12vw, 9rem);
+      block-size: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: .95rem;
+      background: var(--sage);
+    }
+    .about-text p { max-inline-size: 58ch; color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.12rem); line-height: 1.62; }
+    .about-text p + p { margin-block-start: .7rem; }
+    .about-text .pill { margin-block-start: 1.15rem; border-color: var(--stroke); }
+    .experience { padding: clamp(1.05rem, 2.7vw, 2rem); border-radius: var(--radius); background: var(--card); }
+    .experience-heading { font-size: 1.25rem; letter-spacing: -.025em; }
+    .experience-list { margin: .6rem 0 0; padding: 0; list-style: none; }
+    .experience-list li { padding-block: .68rem; border-block-start: 1px solid var(--stroke); }
+    .experience-list strong, .experience-list small { display: block; }
+    .experience-list small, .education { color: var(--muted); font-size: .88rem; }
+    .education { border-block-start: 1px solid var(--stroke); padding-block-start: .68rem; }
+    .site-footer {
+      min-block-size: 4.4rem;
+      padding-block: .6rem;
+      border-block-start: 1px solid var(--stroke);
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    .footer-link { min-block-size: 2.75rem; }
 
     html:has(.report-dialog[open]) { overflow: hidden; }
     .report-dialog {
@@ -258,14 +343,14 @@
       max-block-size: calc(100% - 2rem);
       overscroll-behavior: contain;
       padding: 1rem;
-      border: 1px solid #6973a0;
-      border-radius: 1rem;
-      background: var(--surface);
-      color: var(--text);
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
     }
-    .report-dialog::backdrop { overflow: hidden; overscroll-behavior: contain; background: #060a16d9; }
+    .report-dialog::backdrop { overflow: hidden; overscroll-behavior: contain; background: #191c16b8; }
     .dialog-header { display: flex; align-items: start; justify-content: space-between; gap: .75rem; padding: .2rem .1rem .8rem; }
-    .dialog-title { align-self: center; font-size: clamp(1.15rem, 2.2vw, 1.65rem); line-height: 1.2; letter-spacing: -.03em; }
+    .dialog-title { align-self: center; font-size: clamp(1.15rem, 2.2vw, 1.65rem); line-height: 1.2; letter-spacing: -.035em; }
     .dialog-actions { display: flex; align-items: center; flex: none; gap: .55rem; }
     .close-button { inline-size: 2.75rem; padding: 0; font-size: 1.4rem; }
     .report-viewport {
@@ -274,9 +359,10 @@
       min-block-size: 15rem;
       block-size: clamp(15rem, calc(100dvh - 8.5rem), 50rem);
       block-size: clamp(15rem, min(calc(56.25cqw + 3.5rem), calc(100dvh - 8.5rem)), 50rem);
-      border-radius: .55rem;
+      border: 1px solid var(--stroke);
+      border-radius: .6rem;
       overflow: hidden;
-      background: #e9edf7;
+      background: white;
     }
     .frame-mount, .report-frame { inline-size: 100%; block-size: 100%; }
     .report-frame { display: block; border: 0; }
@@ -286,26 +372,23 @@
       inset: 0;
       display: grid;
       place-content: center;
-      text-align: center;
       padding: 1rem;
-      background: #131c34;
-      color: var(--text);
+      background: var(--card);
+      text-align: center;
       pointer-events: none;
     }
 
     @media (max-width: 53rem) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-art { max-inline-size: 42rem; }
-      .report-grid { gap: 1rem; }
+      .hero-copy, .hero-feature { min-block-size: 21rem; }
+      .hero-copy { padding: clamp(1.25rem, 3.3vw, 2.5rem); }
+      .hero-feature { padding: clamp(.85rem, 2.7vw, 1.75rem); }
     }
-    @media (max-width: 38rem) {
-      .header-inner { flex-wrap: wrap; gap: .25rem 1rem; padding-block: .5rem; }
-      .navigation { gap: .35rem .9rem; }
-      .navigation .button { padding-inline: .65rem; }
-      .report-grid, .about-inner { grid-template-columns: minmax(0, 1fr); }
-      .report-art { block-size: clamp(7rem, 32vw, 10rem); }
-      .filters { gap: .4rem; }
-      .filter { min-inline-size: 0; padding-inline: .66rem; font-size: .875rem; }
+    @media (max-width: 42rem) {
+      .hero, .report-grid, .about-grid { grid-template-columns: minmax(0, 1fr); }
+      .hero-copy { min-block-size: 20rem; }
+      .hero-feature { min-block-size: auto; }
+      .hero h1 { font-size: clamp(3.15rem, 10vw, 5rem); }
+      .report-description { font-size: .95rem; }
       .report-dialog { inline-size: calc(100% - 1rem); max-block-size: calc(100% - 1rem); padding: .65rem; }
       .dialog-header { display: block; }
       .dialog-title { margin-block-end: .65rem; }
@@ -315,6 +398,11 @@
         block-size: clamp(15rem, min(calc(56.25cqw + 3.5rem), calc(100dvh - 10rem)), 50rem);
       }
     }
+    @media (max-width: 25rem) {
+      .site-header { gap: .1rem; }
+      .navigation .pill, .filter { padding-inline: .7rem; }
+      .report-toolbar { gap: .3rem; }
+    }
     @media (prefers-reduced-motion: reduce) {
       :root { scroll-behavior: auto; }
       *, *::before, *::after { transition: none !important; }
@@ -323,215 +411,195 @@
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header>
-    <div class="wrap header-inner">
+  <div class="site">
+    <header class="site-header">
       <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">DK</span> Damian Kasperski</a>
       <nav class="navigation" aria-label="Main navigation">
-        <a class="nav-link" href="#reports">Reports</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="button button-outline" href="https://www.linkedin.com/in/damian-kasperski-2b4ba0177/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external-arrow" aria-hidden="true">↗</span></a>
+        <a class="pill" href="#reports">Reports</a>
+        <a class="pill" href="#about">About me</a>
+        <a class="pill pill-outlined" href="https://www.linkedin.com/in/damian-kasperski-2b4ba0177/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="main" tabindex="-1">
-    <section class="wrap hero" aria-labelledby="name">
-      <div>
-        <h1 id="name">Damian <span>Kasperski.</span></h1>
-        <p class="hero-role">Power BI Developer &amp; Data Analyst</p>
-        <p class="hero-description">I build interactive Power BI reports that help finance and operations teams understand performance and make informed decisions.</p>
-        <div class="hero-actions">
-          <a class="button" href="#reports">Explore reports <span aria-hidden="true">↓</span></a>
-          <a class="button button-outline" href="#about">About me</a>
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="name">
+        <div class="hero-copy">
+          <h1 id="name">Damian <span>Kasperski</span></h1>
+          <p class="hero-role">BI &amp; Analytics</p>
+          <p class="hero-description">I build end-to-end analytics, from data integration and semantic models to Power BI reports.</p>
+          <a class="pill hero-cta" href="#reports">Explore reports <span class="arrow" aria-hidden="true">↓</span></a>
         </div>
-      </div>
-      <div class="art hero-art" aria-hidden="true">
-        <div class="plot">
-          <div class="bars">
-            <span style="--level:7%"></span><span style="--level:12%"></span><span style="--level:17%"></span><span style="--level:24%"></span>
-            <span style="--level:29%"></span><span style="--level:36%"></span><span style="--level:43%"></span><span style="--level:50%"></span>
-            <span style="--level:60%"></span><span style="--level:70%"></span><span style="--level:82%"></span>
+        <a class="hero-feature report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjdjNTlhMGItYmUwOS00MTg2LWI5ODQtZmFlODVhZmY0MDZiIiwidCI6Ijk4ZWY0ZDJhLTNkMjItNDkxMy05MjJlLWY3NTQwYTc5YjNkYSJ9" target="_blank" rel="noopener noreferrer" data-report-title="IBCS Financial Controlling" aria-label="Explore report: IBCS Financial Controlling">
+          <span class="hero-mount">
+            <img class="report-image" src="ibcs.jpg" width="1440" height="810" alt="" fetchpriority="high">
+          </span>
+          <span class="featured-caption">IBCS Financial Controlling <span class="arrow-circle" aria-hidden="true">↗</span></span>
+        </a>
+      </section>
+
+      <section class="reports" id="reports" aria-labelledby="reports-title">
+        <h2 class="section-heading" id="reports-title">Interactive reports</h2>
+        <p class="section-description">Filter by topic and choose a report to explore it in Power BI.</p>
+        <div class="report-toolbar" id="report-toolbar" hidden>
+          <div class="filters" role="group" aria-label="Filter reports by topic">
+            <button class="pill filter" type="button" data-filter="all" aria-pressed="true" aria-controls="report-grid">All reports</button>
+            <button class="pill filter" type="button" data-filter="finance" aria-pressed="false" aria-controls="report-grid">Finance</button>
+            <button class="pill filter" type="button" data-filter="sales" aria-pressed="false" aria-controls="report-grid">Sales</button>
+            <button class="pill filter" type="button" data-filter="operations" aria-pressed="false" aria-controls="report-grid">Operations</button>
           </div>
-          <div class="spark"></div>
+          <p class="filter-status" id="filter-status" role="status"></p>
         </div>
-      </div>
-    </section>
+        <div class="report-grid" id="report-grid">
+          <article class="report-card" id="ibcs-financial-controlling" data-category="finance" aria-labelledby="ibcs-financial-controlling-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjdjNTlhMGItYmUwOS00MTg2LWI5ODQtZmFlODVhZmY0MDZiIiwidCI6Ijk4ZWY0ZDJhLTNkMjItNDkxMy05MjJlLWY3NTQwYTc5YjNkYSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: IBCS Financial Controlling">
+              <span class="report-mount">
+                <img class="report-image" src="ibcs.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="ibcs-financial-controlling-title">IBCS Financial Controlling</h3>
+                <p class="report-description">A financial controlling report that applies IBCS principles to performance comparisons and variance analysis.</p>
+                <ul class="tags"><li>IBCS</li><li>Financial Controlling</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
 
-    <section class="wrap reports" id="reports" aria-labelledby="reports-title">
-      <h2 class="section-heading" id="reports-title">Interactive reports</h2>
-      <p class="section-description">Browse Power BI reports by topic and select one to explore it.</p>
-      <div class="report-toolbar" id="report-toolbar" hidden>
-        <div class="filters" role="group" aria-label="Filter reports by topic">
-          <button class="button button-outline filter" type="button" data-filter="all" aria-pressed="true" aria-controls="report-grid">All reports</button>
-          <button class="button button-outline filter" type="button" data-filter="finance" aria-pressed="false" aria-controls="report-grid">Finance</button>
-          <button class="button button-outline filter" type="button" data-filter="sales" aria-pressed="false" aria-controls="report-grid">Sales</button>
-          <button class="button button-outline filter" type="button" data-filter="operations" aria-pressed="false" aria-controls="report-grid">Operations</button>
+          <article class="report-card" id="modern-executive-controlling" data-category="finance" aria-labelledby="modern-executive-controlling-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjBjZTU0ZTEtNWY1Ni00ZDk2LWE1ODItZGY1Y2U5NzgyNWI0IiwidCI6Ijk4ZWY0ZDJhLTNkMjItNDkxMy05MjJlLWY3NTQwYTc5YjNkYSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Modern Executive Controlling">
+              <span class="report-mount">
+                <img class="report-image" src="executive.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="modern-executive-controlling-title">Modern Executive Controlling</h3>
+                <p class="report-description">An executive controlling report designed to give decision-makers a clear overview of business performance.</p>
+                <ul class="tags"><li>Executive Reporting</li><li>Controlling</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="report-card" id="profit-and-loss" data-category="finance" aria-labelledby="profit-and-loss-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjdmNmEwZTktMGI2Mi00YzVmLTk2ZWMtODMyNTQ0YjRlOTRlIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Profit &amp; Loss Power BI Matrix">
+              <span class="report-mount">
+                <img class="report-image" src="pnl.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="profit-and-loss-title">Profit &amp; Loss Power BI Matrix</h3>
+                <p class="report-description">Drill into cost centers, track budget deviations, and analyze profitability margins in an interactive P&amp;L matrix built with financial DAX patterns.</p>
+                <ul class="tags"><li>Financial Controlling</li><li>P&amp;L</li><li>Management Reporting</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="report-card" id="accounts-receivable" data-category="finance" aria-labelledby="accounts-receivable-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiMzAyMDU4OTMtYzg2Zi00YmIwLWFhN2UtMjFiY2NiNzk2ODQ4IiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Accounts Receivable Analysis">
+              <span class="report-mount">
+                <img class="report-image" src="receivable.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="accounts-receivable-title">Accounts Receivable Analysis</h3>
+                <p class="report-description">Track outstanding invoices and Days Sales Outstanding (DSO), then explore overdue balances, payment trends, and customer payment behavior.</p>
+                <ul class="tags"><li>Finance</li><li>DSO Tracking</li><li>Cash Flow</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="report-card" id="variance-analysis" data-category="finance" aria-labelledby="variance-analysis-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNTFlNjMwMjQtZWU4My00YWQ3LWIzZjEtODc0Mjc3MmQ3ZDAzIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Variance Analysis &amp; Advanced Visualizations">
+              <span class="report-mount">
+                <img class="report-image" src="variance.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="variance-analysis-title">Variance Analysis &amp; Advanced Visualizations</h3>
+                <p class="report-description">Compare actuals with budget or forecast through custom variance charts and advanced DAX measures.</p>
+                <ul class="tags"><li>Data Visualization</li><li>Budget vs Actuals</li><li>Advanced DAX</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="report-card" id="electronic-sales" data-category="sales" aria-labelledby="electronic-sales-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiY2UxMDFlYzItZjg3ZS00YmQzLWIzNDAtMzQwZDJlYzRkMGZmIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Electronic Sales Dashboard">
+              <span class="report-mount">
+                <img class="report-image" src="sales.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="electronic-sales-title">Electronic Sales Dashboard</h3>
+                <p class="report-description">Explore revenue, margin, and product performance by category and region to inform assortment decisions.</p>
+                <ul class="tags"><li>Sales Analytics</li><li>Retail</li><li>KPI Tracking</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="report-card" id="it-service-desk-scorecard" data-category="operations" aria-labelledby="it-service-desk-scorecard-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiMzVkZmYzZDctYjdkZC00M2M4LWFiNWMtYWE4ZmZiYzUzODI5IiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: IT Service Desk Scorecard">
+              <span class="report-mount">
+                <img class="report-image" src="scorecard.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="it-service-desk-scorecard-title">IT Service Desk Scorecard</h3>
+                <p class="report-description">Monitor helpdesk SLA compliance and customer satisfaction, with an executive view of service performance and resource allocation.</p>
+                <ul class="tags"><li>Scorecard</li><li>Operations</li><li>Performance Management</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="report-card" id="it-service-tickets" data-category="operations" aria-labelledby="it-service-tickets-title">
+            <a class="report-link report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNmE3ZjI5ZTAtNzY5MC00OTkwLTkzYmUtYWZiNjRhMGNlMTZlIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: IT Service Ticket Overview (Deep Dive)">
+              <span class="report-mount">
+                <img class="report-image" src="tickets.jpg" width="1440" height="810" loading="lazy" decoding="async" alt="">
+              </span>
+              <div class="report-body">
+                <h3 class="report-title" id="it-service-tickets-title">IT Service Ticket Overview (Deep Dive)</h3>
+                <p class="report-description">Explore ticket resolutions, identify bottlenecks in the support process, and measure team performance against SLA targets.</p>
+                <ul class="tags"><li>Operations</li><li>IT Helpdesk</li><li>SLA</li></ul>
+                <span class="pill report-cta">Explore report <span class="arrow" aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </article>
         </div>
-        <p class="filter-status" id="filter-status" role="status"></p>
-      </div>
+      </section>
 
-      <div class="report-grid" id="report-grid">
-        <article class="report-card" id="ibcs-financial-controlling" data-category="finance" aria-labelledby="ibcs-financial-controlling-title">
-          <div class="art report-art art-ibcs" aria-hidden="true">
-            <div class="plot">
-              <div class="variance">
-                <span style="--level:44%"></span><span style="--level:30%"></span><span style="--level:20%"></span><span class="negative" style="--level:13%"></span><span class="negative" style="--level:23%"></span><span class="negative" style="--level:36%"></span>
-              </div>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="about-identity">
+              <img class="portrait" src="portrait.jpg" width="144" height="144" loading="lazy" decoding="async" alt="Damian Kasperski">
+              <h2 class="section-heading" id="about-title">About me</h2>
             </div>
+            <p>I’m an Expansion Data Analyst at Żabka Polska. I build analytics for retail expansion, including rent and location benchmarking, new-store performance, and expansion KPIs. My background in financial controlling helps me connect each metric to the business decision it supports.</p>
+            <p>My work spans data integration in Microsoft Fabric and Snowflake, semantic modeling and DAX, and Power BI delivery. I use Azure DevOps and Git to manage changes and make report releases repeatable.</p>
+            <a class="pill pill-outlined" href="https://www.linkedin.com/in/damian-kasperski-2b4ba0177/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
-          <div class="report-body">
-            <h3 class="report-title" id="ibcs-financial-controlling-title">IBCS Financial Controlling</h3>
-            <p class="report-description">A financial controlling report that applies IBCS principles to performance comparisons and variance analysis.</p>
-            <ul class="tags"><li>IBCS</li><li>Financial Controlling</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjdjNTlhMGItYmUwOS00MTg2LWI5ODQtZmFlODVhZmY0MDZiIiwidCI6Ijk4ZWY0ZDJhLTNkMjItNDkxMy05MjJlLWY3NTQwYTc5YjNkYSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: IBCS Financial Controlling">Explore report <span aria-hidden="true">→</span></a>
+          <div class="experience">
+            <h3 class="experience-heading">Experience</h3>
+            <ul class="experience-list">
+              <li><strong>Żabka Polska</strong><small>Expansion Data Analyst · Since May 2025</small></li>
+              <li><strong>Antdata</strong><small>Power BI Developer · 2024–2025</small></li>
+              <li><strong>Volkswagen Group Polska</strong><small>Junior Cost and Reporting Controller · 2023–2024</small></li>
+            </ul>
+            <p class="education">Master’s degree in Corporate Finance and Accounting<br>Uniwersytet Ekonomiczny w Poznaniu</p>
           </div>
-        </article>
-
-        <article class="report-card" id="modern-executive-controlling" data-category="finance" aria-labelledby="modern-executive-controlling-title">
-          <div class="art report-art art-executive" aria-hidden="true">
-            <div class="plot">
-              <div class="bars">
-                <span style="--level:12%"></span><span style="--level:20%"></span><span style="--level:27%"></span><span style="--level:29%"></span><span style="--level:37%"></span><span style="--level:47%"></span>
-                <span style="--level:41%"></span><span style="--level:51%"></span><span style="--level:59%"></span><span style="--level:68%"></span><span style="--level:81%"></span>
-              </div>
-              <div class="spark"></div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="modern-executive-controlling-title">Modern Executive Controlling</h3>
-            <p class="report-description">An executive controlling report designed to give decision-makers a clear overview of business performance.</p>
-            <ul class="tags"><li>Executive Reporting</li><li>Controlling</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjBjZTU0ZTEtNWY1Ni00ZDk2LWE1ODItZGY1Y2U5NzgyNWI0IiwidCI6Ijk4ZWY0ZDJhLTNkMjItNDkxMy05MjJlLWY3NTQwYTc5YjNkYSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Modern Executive Controlling">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="report-card" id="profit-and-loss" data-category="finance" aria-labelledby="profit-and-loss-title">
-          <div class="art report-art art-pnl" aria-hidden="true">
-            <div class="plot">
-              <div class="matrix">
-                <span style="--level:81%"></span><span style="--level:59%"></span><span style="--level:70%"></span><span style="--level:43%"></span>
-              </div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="profit-and-loss-title">Profit &amp; Loss Power BI Matrix</h3>
-            <p class="report-description">Drill into cost centers, track budget deviations, and analyze profitability margins in an interactive P&amp;L matrix built with financial DAX patterns.</p>
-            <ul class="tags"><li>Financial Controlling</li><li>P&amp;L</li><li>Management Reporting</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNjdmNmEwZTktMGI2Mi00YzVmLTk2ZWMtODMyNTQ0YjRlOTRlIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Profit &amp; Loss Power BI Matrix">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="report-card" id="accounts-receivable" data-category="finance" aria-labelledby="accounts-receivable-title">
-          <div class="art report-art art-receivables" aria-hidden="true">
-            <div class="plot">
-              <div class="matrix">
-                <span style="--level:64%"></span><span style="--level:78%"></span><span style="--level:47%"></span><span style="--level:26%"></span>
-              </div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="accounts-receivable-title">Accounts Receivable Analysis</h3>
-            <p class="report-description">Track outstanding invoices and Days Sales Outstanding (DSO), then explore overdue balances, payment trends, and customer payment behavior.</p>
-            <ul class="tags"><li>Finance</li><li>DSO Tracking</li><li>Cash Flow</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiMzAyMDU4OTMtYzg2Zi00YmIwLWFhN2UtMjFiY2NiNzk2ODQ4IiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Accounts Receivable Analysis">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="report-card" id="variance-analysis" data-category="finance" aria-labelledby="variance-analysis-title">
-          <div class="art report-art art-variance" aria-hidden="true">
-            <div class="plot">
-              <div class="variance">
-                <span style="--level:28%"></span><span class="negative" style="--level:25%"></span><span style="--level:39%"></span><span class="negative" style="--level:12%"></span><span style="--level:18%"></span><span class="negative" style="--level:35%"></span>
-              </div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="variance-analysis-title">Variance Analysis &amp; Advanced Visualizations</h3>
-            <p class="report-description">Compare actuals with budget or forecast through custom variance charts and advanced DAX measures.</p>
-            <ul class="tags"><li>Data Visualization</li><li>Budget vs Actuals</li><li>Advanced DAX</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNTFlNjMwMjQtZWU4My00YWQ3LWIzZjEtODc0Mjc3MmQ3ZDAzIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Variance Analysis &amp; Advanced Visualizations">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="report-card" id="electronic-sales" data-category="sales" aria-labelledby="electronic-sales-title">
-          <div class="art report-art art-sales" aria-hidden="true">
-            <div class="plot">
-              <div class="bars">
-                <span style="--level:14%"></span><span style="--level:29%"></span><span style="--level:22%"></span><span style="--level:40%"></span><span style="--level:32%"></span><span style="--level:55%"></span>
-                <span style="--level:49%"></span><span style="--level:57%"></span><span style="--level:66%"></span><span style="--level:59%"></span><span style="--level:72%"></span>
-              </div>
-              <div class="spark"></div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="electronic-sales-title">Electronic Sales Dashboard</h3>
-            <p class="report-description">Explore revenue, margin, and product performance by category and region to inform assortment decisions.</p>
-            <ul class="tags"><li>Sales Analytics</li><li>Retail</li><li>KPI Tracking</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiY2UxMDFlYzItZjg3ZS00YmQzLWIzNDAtMzQwZDJlYzRkMGZmIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: Electronic Sales Dashboard">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="report-card" id="it-service-desk-scorecard" data-category="operations" aria-labelledby="it-service-desk-scorecard-title">
-          <div class="art report-art art-scorecard" aria-hidden="true">
-            <div class="plot">
-              <div class="matrix">
-                <span style="--level:78%"></span><span style="--level:91%"></span><span style="--level:67%"></span><span style="--level:83%"></span>
-              </div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="it-service-desk-scorecard-title">IT Service Desk Scorecard</h3>
-            <p class="report-description">Monitor helpdesk SLA compliance and customer satisfaction, with an executive view of service performance and resource allocation.</p>
-            <ul class="tags"><li>Scorecard</li><li>Operations</li><li>Performance Management</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiMzVkZmYzZDctYjdkZC00M2M4LWFiNWMtYWE4ZmZiYzUzODI5IiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: IT Service Desk Scorecard">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="report-card" id="it-service-tickets" data-category="operations" aria-labelledby="it-service-tickets-title">
-          <div class="art report-art art-tickets" aria-hidden="true">
-            <div class="plot">
-              <div class="bars">
-                <span style="--level:16%"></span><span style="--level:29%"></span><span style="--level:42%"></span><span style="--level:33%"></span><span style="--level:36%"></span><span style="--level:57%"></span>
-                <span style="--level:41%"></span><span style="--level:49%"></span><span style="--level:62%"></span><span style="--level:55%"></span><span style="--level:73%"></span>
-              </div>
-              <div class="spark"></div>
-            </div>
-          </div>
-          <div class="report-body">
-            <h3 class="report-title" id="it-service-tickets-title">IT Service Ticket Overview (Deep Dive)</h3>
-            <p class="report-description">Explore ticket resolutions, identify bottlenecks in the support process, and measure team performance against SLA targets.</p>
-            <ul class="tags"><li>Operations</li><li>IT Helpdesk</li><li>SLA</li></ul>
-            <a class="button report-open" href="https://app.powerbi.com/view?r=eyJrIjoiNmE3ZjI5ZTAtNzY5MC00OTkwLTkzYmUtYWZiNjRhMGNlMTZlIiwidCI6ImU4MWFmMjllLTg0ZWMtNDYwYi1iZjJmLTc5ZGE1ODFjYWZmZSJ9" target="_blank" rel="noopener noreferrer" aria-label="Explore report: IT Service Ticket Overview (Deep Dive)">Explore report <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="wrap about-inner">
-        <h2 class="section-heading" id="about-title">About me</h2>
-        <div class="about-text">
-          <p>I’m a Power BI Developer and Data Analyst with a background in corporate controlling and management reporting. I turn data from multiple sources into BI models and reports that teams can use in their day-to-day work.</p>
-          <p>I work with finance and operations teams to define business metrics, build reporting solutions, and automate recurring data work. My focus is Power BI development, data modeling, and process automation.</p>
-          <a class="button button-outline" href="https://www.linkedin.com/in/damian-kasperski-2b4ba0177/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span class="external-arrow" aria-hidden="true">↗</span></a>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <div class="wrap footer-inner">
+    <footer class="site-footer">
       <span>Damian Kasperski</span>
-      <a class="footer-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
-    </div>
-  </footer>
+      <a class="pill pill-outlined footer-link" href="#top">Back to top <span class="arrow" aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
 
   <dialog class="report-dialog" id="report-dialog" aria-labelledby="dialog-title">
     <div class="dialog-header">
       <h2 class="dialog-title" id="dialog-title">Power BI report</h2>
       <div class="dialog-actions">
-        <a class="button button-outline dialog-external" id="dialog-external" target="_blank" rel="noopener noreferrer">Open in Power BI <span class="external-arrow" aria-hidden="true">↗</span></a>
-        <form method="dialog"><button class="button button-outline close-button" type="submit" aria-label="Close report" autofocus>×</button></form>
+        <a class="pill pill-outlined" id="dialog-external" target="_blank" rel="noopener noreferrer">Open in Power BI <span class="arrow" aria-hidden="true">↗</span></a>
+        <form method="dialog"><button class="pill pill-outlined close-button" type="submit" aria-label="Close report" autofocus>×</button></form>
       </div>
     </div>
     <div class="report-viewport">
@@ -574,7 +642,7 @@
     let opener;
 
     function openReport(link) {
-      const title = link.closest('.report-card').querySelector('.report-title').textContent;
+      const title = link.dataset.reportTitle || link.closest('.report-card').querySelector('.report-title').textContent;
       const frame = document.createElement('iframe');
       opener = link;
       dialogTitle.textContent = title;
